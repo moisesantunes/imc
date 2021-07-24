@@ -1,0 +1,105 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+body {font-family: 'Trebuchet MS', sans-serif;}
+main {
+	display:flex;
+	flex-direction:column;
+	min-height:90vh;
+	align-items:center;
+	justify-content:space-around;
+}
+#form-box {
+	width:90%;
+	margin:0 auto ;
+	border:2px solid skyblue;
+}
+#form-box h1{
+	margin: 0;
+	text-align:center;
+	background-color:skyblue;
+	padding:1em;
+	color:slategrey;
+}
+#form-box form {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	margin:10px auto;
+}
+#form-box form input {
+	width:90%;
+	height:2em;
+	font-size:1.3em;
+	text-align:center;
+	border:2px solid #8d95a5 ;
+	background-color:#f1f2f4;
+	margin:0.2em 0;	
+}
+
+#form-box form button{
+	width:75%;
+	font-size:1.3em;
+	padding:0.3em;
+	margin:0.2em 0;
+	background-color:slategrey;
+	color:white;
+	border:none;
+}
+#result-box {
+	width:90%;
+	margin:0 auto;
+	dbackground-color:slategrey;
+}
+#result-box h2{
+	text-align:center;
+	padding:1em;
+	background-color:slategrey;
+	color:rgba(135, 206, 235,1);
+}
+#mostruario p{
+	text-align:center;
+	padding:10px;
+	border-bottom:4px solid #8d95a5;
+	width:100%;
+	color:#434d56;
+	background-color:#f1f2f4;
+
+}
+#mostruario p.show.magro{
+	background-color:rgba(135, 206, 235,0.2);
+	border-bottom-color:rgba(135, 206, 235,0.6);
+}
+#mostruario p.show.normal{
+	background-color:rgba(0, 204, 102, 0.2);
+	border-bottom-color:rgba(0, 204, 102,0.6);
+}
+#mostruario p.show.sobre-peso{
+	background-color:rgba(255, 255, 0 ,0.2);
+	border-bottom-color:rgba(255, 255, 0,0.6);
+}
+#mostruario p.show.obesidade{
+	background-color:rgba(255, 51, 0 ,0.2);
+	border-bottom-color:rgba(255, 51, 0 ,0.6);
+}
+#mostruario p.show.obesidade-grave{
+	background-color:rgba(102, 0, 0,0.2);
+	border-bottom-color:rgba(102, 0, 0 ,0.6);
+}
+
+@media (min-width:800px){
+	main{
+		flex-direction:row;
+		width:95%;
+		max-width:800px;
+		margin:0 auto;
+		align-items:center;
+		justify-content:center;	
+		min-height:100vh;
+	}
+	#form-box, #result-box  {
+	width:46%;
+	}
+}

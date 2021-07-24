@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; " />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Calculadora IMC</title>
+		<link rel="stylesheet" href="css/app.css"  >
+	</head>
+	<body>
+		<main>
+			<section id="form-box" >
+				<h1>Calculadora IMC</h1>
+				<form id="dados" >
+					<input type="number" name="peso" id="peso" step="0.01" placeholder=" Peso - ex: 89.1" >
+					<input type="number" name="altura" id="altura" step="0.01" placeholder="Altura - ex: 1.70"   >
+					<button>Consulta</button>
+				</form>
+			</section>
+			<section id="result-box" >
+				<div>
+					<h2 id="resultado" >Insira seu peso e altura.</h2>
+					
+					<div id="mostruario" ></div>
+				</div>
+		</main>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
