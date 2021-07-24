@@ -31,26 +31,29 @@ function resultado(res){
 
 function descricao(val){
 ///limpa()
+let r =document.getElementById("resultado")
+
 	if(val < 18.5){
 //	alert('ta magro')
 	 document.getElementsByClassName('magro')[0].className +=" show"
-	
+	r.style.color="rgba(135, 206, 235,1)"
 	}else if(val >= 18.5 && val < 25.0 ){
 //	alert('ta normal')
 	document.getElementsByClassName('normal')[0].className +=" show"
-	
+	r.style.color="rgba(0, 204, 102,1)"
 	} else if(val >= 25.0 && val < 30.0 ){
 //	alert('ta meio gordo')
 	document.getElementsByClassName('sobre-peso')[0].className +=" show"
-	
+//	r.style.como
+	r.style.color="rgba(255, 255, 0,1)"
 	}else if(val >= 30.0 && val < 39.9){
 //	alert('ta gordo mesmo')
 	document.getElementsByClassName('obesidade')[0].className +=" show"
-	
+	r.style.color="rgba(255, 51, 0 ,1)"
 	}else{
 //	alert('já era , pacoto')
 	document.getElementsByClassName('obesidade-grave')[0].className +=" show"
-	
+	r.style.color="rgba(102, 0, 0 ,1)"
 	}
 		
 }

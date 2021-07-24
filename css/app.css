@@ -3,7 +3,7 @@
 	margin:0;
 	padding:0;
 }
-body {font-family: 'Trebuchet MS', sans-serif;}
+body {font-family:sans-serif;}
 main {
 	display:flex;
 	flex-direction:column;
